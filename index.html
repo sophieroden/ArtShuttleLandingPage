@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtShuttle Dublin — Student Fine-Art Transit & Micro-Courier Service</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #f59e0b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --success: #16a34a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    /* Top Academic Banner */
+    .academic-bar {
+      background-color: #0f172a;
+      color: #f8fafc;
+      text-align: center;
+      padding: 8px 12px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    .academic-badge {
+      background-color: var(--accent);
+      color: #000;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.7rem;
+      margin-right: 6px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to bottom, #eff6ff, #f8fafc);
+      border-bottom: 1px solid var(--border);
+      border-radius: 0 0 16px 16px;
+      margin-bottom: 30px;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 24px auto;
+    }
+
+    /* Call to Action Button */
+    .cta-button {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+      transition: background 0.2s;
+    }
+    .cta-button:hover {
+      background-color: var(--primary-dark);
+    }
+
+    /* Sections */
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 16px 0 8px 0;
+      color: var(--text);
+    }
+    p, li {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.85rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f1f5f9;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* Quote Box */
+    .quote-box {
+      background-color: #f8fafc;
+      border-left: 4px solid var(--primary);
+      padding: 12px 16px;
+      font-style: italic;
+      color: var(--text);
+      margin: 12px 0;
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* Waitlist Form */
+    .form-group {
+      margin-bottom: 12px;
+    }
+    input[type="email"], input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    .form-btn {
+      background-color: var(--success);
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .form-success {
+      display: none;
+      background-color: #dcfce7;
+      color: #166534;
+      padding: 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Academic Banner -->
+  <div class="academic-bar">
+    <span class="academic-badge">NCI H7BTEC</span> Technology for Business Final Project — Fictitious Sample Project[cite: 3]
+  </div>
+
+  <!-- Hero Section (Area 4: Headline & CTA) -->
+  <div class="hero">
+    <h1>Stop Risking Your Final-Year Degree Project on Unreliable Dublin Commuter Transport</h1>
+    <p>A dedicated micro-courier shuttle service for commuting art, architecture, and design students transporting fragile physical models and canvases from suburban family homes directly to campus studio gates.</p>
+    
+    <!-- Updated Link to your specific Demo GitHub Pages URL -->
+    <a href="https://sophieroden.github.io/ArtShuttleDemo-/index.html" class="cta-button" target="_blank">Try the Interactive Demo ➔</a>
+  </div>
+
+  <div class="container">
+
+    <!-- Area 1: The Problem & Who Has It -->
+    <section>
+      <h2>1. The Problem & Who Has It</h2>
+      <p><strong>Customer Segment:</strong> Final-year art, design, and architecture students (User) commuting daily from suburban family homes into Dublin colleges (e.g., NCAD, TU Dublin Grangegorman, IADT) who rely on erratic public transit. The buyer is the student or supporting parent funding their materials.</p>
+      
+      <div class="quote-box">
+        "My bus got cancelled in the freezing rain, my large architectural model warped on the crowded replacement bus, and I've wasted €80 in materials right before my final submission." <span style="font-size:0.75rem; color:var(--text-muted);">(Invented quote)[cite: 3]</span>
+      </div>
+
+      <h3>Specific Requirements</h3>
+      <ul>
+        <li>Secure van transit designed specifically for oversized canvases, framed art, and 3D scale models.</li>
+        <li>Real-time route tracking synchronized with Dublin public transit delay patterns.</li>
+        <li>Guaranteed morning pickup windows from outer Dublin commuter hubs (Swords, Maynooth, Bray, Lucan).</li>
+        <li>Protective weather-sealed transit crates to prevent moisture and impact damage.</li>
+        <li>Direct drop-off at college studio loading bays before morning critique deadlines.</li>
+      </ul>
+
+      <h3>How They Cope Today & Existing Alternatives</h3>
+      <p>Students currently scramble to wrap projects in black bin bags while begging family members to drive them through M50 traffic. Existing alternatives checked at source:</p>
+      <ul>
+        <li><strong>An Post Express Post / Parcel Delivery:</strong> Checked 24 October 2026 at <a href="https://www.anpost.com" target="_blank">anpost.com</a>. Limitation: Does not handle oversized delicate 3D models or offer fragile studio drop-off inside campus buildings.</li>
+        <li><strong>Free Now / Uber Taxi Courier:</strong> Checked 24 October 2026 at <a href="https://www.free-now.com" target="_blank">free-now.com</a>. Limitation: Drivers frequently refuse oversized or fragile student art boards due to lack of interior secure racking.</li>
+      </ul>
+    </section>
+
+    <!-- Area 2: Solution & Requirements Fit -->
+    <section>
+      <h2>2. The Solution Fits the Requirements</h2>
+      <p><strong>What it is:</strong> ArtShuttle Dublin is a mobile-web scheduling portal connecting student commuters with dedicated micro-van couriers equipped with specialized padding for fragile academic work.</p>
+      
+      <h3>How It Works in 3 Steps</h3>
+      <ol>
+        <li><strong>Book Route:</strong> Select your commuter origin station and campus destination on your phone.</li>
+        <li><strong>Secure Crate:</strong> Choose weather-sealed crate protection for fragile glass or foam board models.</li>
+        <li><strong>Studio Drop-Off:</strong> Meet the shuttle van at your suburban hub and track it directly to your college gate.</li>
+      </ol>
+
+      <h3>Requirements vs. Solution Matrix</h3>
+      <table>
+        <tr>
+          <th>Requirement</th>
+          <th>How Solution Meets It</th>
+        </tr>
+        <tr>
+          <td>Specialized van transport for oversized work</td>
+          <td>Configured micro-vans with vertical shelving and straps (Met in demo).</td>
+        </tr>
+        <tr>
+          <td>Sync with Dublin transit delays</td>
+          <td>Automated peak-commuter delay alerts built into booking flow (Met in demo).</td>
+        </tr>
+        <tr>
+          <td>Guaranteed morning suburban pickup</td>
+          <td>Pre-scheduled morning windows from outer hubs like Swords and Maynooth (Met in demo).</td>
+        </tr>
+        <tr>
+          <td>Weather-sealed protection</td>
+          <td>Optional padded crate rental add-on during checkout (Met in demo).</td>
+        </tr>
+      </table>
+
+      <h3>Sustainability & Pricing (Assumption)</h3>
+      <p>Priced at an assumed base fare of €10.00 to €14.00 per transit run depending on distance, plus a €2.50 crate rental fee. Revenue is split 75% to independent verified van drivers and 25% platform commission to sustain server and dispatch operations[cite: 3].</p>
+    </section>
+
+    <!-- Area 4: Non-transmitting CTA Form & Disclaimers -->
+    <section>
+      <h2>3. Join the Campus Pilot Waitlist</h2>
+      <p>Are you an art or architecture student commuting into Dublin? Register your interest for our upcoming semester pilot.</p>
+      
+      <form id="waitlistForm" onsubmit="handleWaitlist(event)">
+        <div class="form-group">
+          <label for="emailInput">Student College Email (.ie)</label>
+          <input type="email" id="emailInput" placeholder="student@ncad.ie" required>
+        </div>
+        <button type="submit" class="form-btn">Join Pilot Waitlist</button>
+      </form>
+      <div id="successMessage" class="form-success">
+        ✓ Thank you! You have been added to the ArtShuttle Dublin pilot waitlist. (Sample demo form: no data transmitted)[cite: 3, 4].
+      </div>
+    </section>
+
+    <footer>
+      <p><strong>Project Note:</strong> This is a fictitious student project created for the Module Technology for Business (H7BTEC) at National College of Ireland (2026)[cite: 1, 3].</p>
+      <p>All data, statistics, and bookings shown are sample data for educational demonstration purposes[cite: 3].</p>
+    </footer>
+
+  </div>
+
+  <script>
+    function handleWaitlist(event) {
+      event.preventDefault();
+      document.getElementById("waitlistForm").style.display = "none";
+      document.getElementById("successMessage").style.display = "block";
+    }
+  </script>
+</body>
+</html>
